@@ -13,8 +13,8 @@ import { LoaderCircle } from 'lucide-vue-next';
 
 <template>
     <AuthBase
-        title="Create an account"
-        description="Enter your details below to create your account"
+        title="Crie uma conta"
+        description="Insira seus dados abaixo para criar sua conta"
     >
         <Head title="Register" />
 
@@ -26,7 +26,7 @@ import { LoaderCircle } from 'lucide-vue-next';
         >
             <div class="grid gap-6">
                 <div class="grid gap-2">
-                    <Label for="name">Name</Label>
+                    <Label for="name">Nome</Label>
                     <Input
                         id="name"
                         type="text"
@@ -35,7 +35,7 @@ import { LoaderCircle } from 'lucide-vue-next';
                         :tabindex="1"
                         autocomplete="name"
                         name="name"
-                        placeholder="Full name"
+                        placeholder="Nome completo"
                     />
                     <InputError :message="errors.name" />
                 </div>
@@ -63,7 +63,7 @@ import { LoaderCircle } from 'lucide-vue-next';
                         :tabindex="3"
                         autocomplete="new-password"
                         name="password"
-                        placeholder="Password"
+                        placeholder="Senha"
                     />
                     <InputError :message="errors.password" />
                 </div>
@@ -77,7 +77,7 @@ import { LoaderCircle } from 'lucide-vue-next';
                         :tabindex="4"
                         autocomplete="new-password"
                         name="password_confirmation"
-                        placeholder="Confirm password"
+                        placeholder="Confirmar senha"
                     />
                     <InputError :message="errors.password_confirmation" />
                 </div>

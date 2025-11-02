@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pessoas', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 100);
-            $table->string('cpf', 14)->unique();
+            $table->string('cpf', 18)->unique();
             $table->enum('tipo', ['Física', 'Jurídica']);
             $table->string('telefone', 20)->nullable();
             $table->string('email', 100)->unique();

@@ -11,18 +11,13 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/vue3';
 import { BookOpen, Folder, UserPlus, UserRoundSearch } from 'lucide-vue-next';
-import AppLogo from './AppLogo.vue';
+import { BookUser, Linkedin, Github } from 'lucide-vue-next';
+import pessoas from '@/routes/pessoas';
 
 const mainNavItems: NavItem[] = [
-    {
-        title: 'Deshboard',
-        href: dashboard(),
-        icon: UserPlus,
-    },
     {
         title: 'Pessoas',
         href: '/pessoas',
@@ -32,14 +27,14 @@ const mainNavItems: NavItem[] = [
 
 const footerNavItems: NavItem[] = [
     {
-        title: 'Github Repo',
-        href: 'https://github.com/laravel/vue-starter-kit',
-        icon: Folder,
+        title: 'Github Emanuel Ary de Oliveira',
+        href: 'https://github.com/EmanuelAry',
+        icon: Github,
     },
     {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#vue',
-        icon: BookOpen,
+        title: 'Linkedin Emanuel Ary de Oliveira',
+        href: 'https://www.linkedin.com/in/emanuel-oliveira-4010841a2/',
+        icon: Linkedin,
     },
 ];
 </script>
@@ -50,8 +45,9 @@ const footerNavItems: NavItem[] = [
             <SidebarMenu>
                 <SidebarMenuItem>
                     <SidebarMenuButton size="lg" as-child>
-                        <Link :href="dashboard()">
-                            <AppLogo />
+                        <Link :href="'/pessoas'">
+                            <BookUser />
+                            Sistema de Cadastro de Pessoas
                         </Link>
                     </SidebarMenuButton>
                 </SidebarMenuItem>

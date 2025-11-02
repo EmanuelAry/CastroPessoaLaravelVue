@@ -23,7 +23,7 @@ class PessoaController extends Controller{
         try{
             $validated = $request->validate([
                 'nome' => 'required|string|max:100',
-                'cpf' => 'required|string|max:14',
+                'cpf' => 'required|string|max:18',
                 'tipo' => 'required|string|in:Física,Jurídica',
                 'telefone' => 'required|string|max:20',
                 'email' => 'required|string|email|max:100',
