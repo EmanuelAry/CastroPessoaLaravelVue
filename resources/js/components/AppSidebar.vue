@@ -27,12 +27,12 @@ const mainNavItems: NavItem[] = [
 
 const footerNavItems: NavItem[] = [
     {
-        title: 'Github Emanuel Ary de Oliveira',
+        title: 'GitHub',
         href: 'https://github.com/EmanuelAry',
         icon: Github,
     },
     {
-        title: 'Linkedin Emanuel Ary de Oliveira',
+        title: 'LinkedIn',
         href: 'https://www.linkedin.com/in/emanuel-oliveira-4010841a2/',
         icon: Linkedin,
     },
@@ -47,7 +47,7 @@ const footerNavItems: NavItem[] = [
                     <SidebarMenuButton size="lg" as-child>
                         <Link :href="'/pessoas'">
                             <BookUser />
-                            Sistema de Cadastro de Pessoas
+                            Cadastro de Pessoas
                         </Link>
                     </SidebarMenuButton>
                 </SidebarMenuItem>
